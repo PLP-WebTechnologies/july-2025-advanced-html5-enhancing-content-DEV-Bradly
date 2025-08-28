@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Worship & Nature Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+        header, main, footer {
+            max-width: 800px;
+            margin: auto;
+        }
+        img, iframe, video, audio {
+            max-width: 100%;
+            display: block;
+            margin: 20px 0;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Worship & Nature Showcase</h1>
+    <p>This page displays a worship video, a peaceful nature photo, includes lists and tables, and a complete HTML5 form for user feedback.</p>
+</header>
+
+<main>
+
+    <!-- Nature Image -->
+    <section>
+        <h2>Nature Image</h2>
+        img src="https://source.unsplash.com/800x400/?nature,forest" alt="Peaceful nature scene">
+    </section>
+
+    <!-- Worship Video -->
+    <section>
+        <h2>Hillsong Worship Video</h2>
+        <video width="100%" height="400" controls>
+        <source src="my-worship-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p><em>GRACE TO GRACE-Hailsong</em></p>
+    </section>
+
+    <!-- Audio Clip -->
+    <section>
+        <h2>Peaceful Audio</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Lists Section -->
+    <section>
+        <h2>Nature & Worship Elements</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Trees</li>
+            <li>Rivers</li>
+            <li>Mountains</li>
+            <li>Sunlight</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Pray</li>
+            <li>Reflect</li>
+            <li>Worship</li>
+            <li>Connect with nature</li>
+        </ol>
+
+        <h3>Definition List</h3>
+        <dl>
+            <dt>Worship</dt>
+            <dd>The feeling or expression of reverence for a deity.</dd>
+            <dt>Nature</dt>
+            <dd>The physical world collectively, including plants, animals, and landscapes.</dd>
+        </dl>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Worship Events Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Event</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Morning Worship</td>
+                    <td>9:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Evening Prayer</td>
+                    <td>7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Nature Walk & Devotion</td>
+                    <td>5:30 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Enhanced Form -->
+    <section>
+        <h2>Feedback Form</h2>
+        <form action="#" method="post" autocomplete="on" novalidate>
+
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 1234567890">
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select Country--</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="in">India</option>
+                    <option value="ng">Nigeria</option>
+                </select>
+
+                <label for="hear">How did you hear about us?</label>
+                <input type="text" id="hear" name="hear" value="Online Search" readonly>
+
+                <label>
+                    <input type="checkbox" name="subscribe"> Subscribe to our newsletter
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Message</legend>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Share your thoughts..." required minlength="10"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Worship & Nature Page. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
